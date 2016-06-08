@@ -1,5 +1,5 @@
 package com.ateam.hostelmanagement;
-//thathaji changed satish also changed ramki change also
+
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
