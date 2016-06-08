@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<definition name="template-login" template="/WEB-INF/views/layouts/loginLayout.jsp">
+		<put-attribute name="title-content" value="Effort" />
+		<put-attribute name="css-content" value="" />
+		<put-attribute name="js-content" value="" />
+		<put-attribute name="header-content" value="/WEB-INF/views/sections/header_login.jsp" />
+		<put-attribute name="body-content" value="" />
+		<put-attribute name="footer-content" value="/WEB-INF/views/sections/footer.jsp" />
+	</definition>
+	
+	<definition name="template-main" template="/WEB-INF/views/layouts/layout.jsp">
+		<put-attribute name="title-content" value="Effort" />
+		<put-attribute name="css-content" value="/WEB-INF/views/sections/css.jsp" />
+		<put-attribute name="js-content" value="/WEB-INF/views/sections/js.jsp" />
+		<put-attribute name="header-content" value="/WEB-INF/views/sections/header.jsp" />
+		<put-attribute name="side-panel-content" value="/WEB-INF/views/sections/side_panel.jsp" />
+		<put-attribute name="nav-menu-content" value="/WEB-INF/views/sections/menu_nav.jsp" />
+		<put-attribute name="body-content" value="" />
+		<put-attribute name="footer-content" value="/WEB-INF/views/sections/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="template-login">
+		<put-attribute name="title-content" value="Login" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/login.jsp" />
+	</definition>
+	
+	<definition name="accessDenied" extends="template-main">
+		<put-attribute name="header-title-content" value="Access Denied" />
+		<put-attribute name="title-content" value="" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/accessDenied.jsp" />
+	</definition>
+	
+	<definition name="effort" extends="template-main">
+		<put-attribute name="header-title-content" value="" />
+		<put-attribute name="title-content" value="" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/effort.jsp" />
+	</definition>
+	
+	<definition name="createHostler" extends="template-main">
+		<put-attribute name="header-title-content" value="Create Hostler" />
+		<put-attribute name="title-content" value="Create Hostler" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createHostler.jsp" />
+	</definition>
+	
+	<definition name="editHostler" extends="template-main">
+		<put-attribute name="header-title-content" value="Modify Hostler" />
+		<put-attribute name="title-content" value="Modify Hostler" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/editHostler.jsp" />
+	</definition>
+	
+	<definition name="allHostlers" extends="template-main">
+		<put-attribute name="header-title-content" value="All Hostlers" />
+		<put-attribute name="title-content" value="All Hostlers" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/allHostlers.jsp" />
+	</definition>
+	<definition name="unpaidHostlerSearch" extends="template-main">
+		<put-attribute name="header-title-content" value="unpaid Hostlers" />
+		<put-attribute name="title-content" value="unpaid Hostlers" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/unpaidHostlerSearch.jsp" />
+	</definition>
+	<definition name="hostlerSearch" extends="template-main">
+		<put-attribute name="header-title-content" value="searchHostler" />
+		<put-attribute name="title-content" value="searchHostler" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/hostlerSearch.jsp" />
+	</definition>
+	<definition name="hostlerCurrentPayers" extends="template-main">
+		<put-attribute name="header-title-content" value="currentHostler" />
+		<put-attribute name="title-content" value="currentHostler" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/currentPayers.jsp" />
+	</definition>
+	<definition name="createHostlerRoomMapping" extends="template-main">
+		<put-attribute name="header-title-content" value="Hostler room " />
+		<put-attribute name="title-content" value="Hostler room" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createHostlerRoomMapping.jsp" />
+	</definition>
+	<definition name="createPayment" extends="template-main">
+		<put-attribute name="header-title-content" value="Make Payment " />
+		<put-attribute name="title-content" value="Make Payment" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createPayment.jsp" />
+	</definition>
+	<definition name="Payments" extends="template-main">
+		<put-attribute name="header-title-content" value=" All Payments " />
+		<put-attribute name="title-content" value="All Payments" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/Payments.jsp" />
+	</definition>
+	<definition name="hostlerPayment" extends="template-main">
+		<put-attribute name="header-title-content" value=" payment hostler " />
+		<put-attribute name="title-content" value="payment hostler" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/hostlerPayment.jsp" />
+	</definition>
+<definition name="paymentHistory" extends="template-main">
+		<put-attribute name="header-title-content" value=" payment history " />
+		<put-attribute name="title-content" value="payment history" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/paymentHistory.jsp" />
+	</definition>
+	
+	<definition name="createRoom" extends="template-main">
+		<put-attribute name="header-title-content" value="create Room" />
+		<put-attribute name="title-content" value="create Room" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createRoom.jsp" />
+	</definition>
+	<definition name="editRoom" extends="template-main">
+		<put-attribute name="header-title-content" value="Modify Room" />
+		<put-attribute name="title-content" value="Modify Room" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/editRoom.jsp" />
+	</definition>
+	<definition name="roomSearch" extends="template-main">
+		<put-attribute name="header-title-content" value="searchRoom" />
+		<put-attribute name="title-content" value="searchRoom" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/roomSearch.jsp" />
+	</definition>
+	<definition name="availableBeds" extends="template-main">
+		<put-attribute name="header-title-content" value="Beds available" />
+		<put-attribute name="title-content" value="Beds available" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/availableBeds.jsp" />
+	</definition>
+	<definition name="homeRoom" extends="template-main">
+		<put-attribute name="header-title-content" value="All Rooms" />
+		<put-attribute name="title-content" value="All Rooms" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/homeRoom.jsp" />
+	</definition>
+	<definition name="createHostel" extends="template-main">
+		<put-attribute name="header-title-content" value="create Hostel" />
+		<put-attribute name="title-content" value="create Hostel" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createHostel.jsp" />
+	</definition>
+	<definition name="editHostel" extends="template-main">
+		<put-attribute name="header-title-content" value="Modify hostel" />
+		<put-attribute name="title-content" value="Modify hostel" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/editHostel.jsp" />
+	</definition>
+	<definition name="homeHostel" extends="template-main">
+		<put-attribute name="header-title-content" value="All hostels" />
+		<put-attribute name="title-content" value="All hostels" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/homeHostel.jsp" />
+	</definition>
+	<definition name="createExpense" extends="template-main">
+		<put-attribute name="header-title-content" value="create expense" />
+		<put-attribute name="title-content" value="create expense" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createExpense.jsp" />
+	</definition>
+	<definition name="Expense" extends="template-main">
+		<put-attribute name="header-title-content" value="All expeneses" />
+		<put-attribute name="title-content" value="All expenses" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/Expense.jsp" />
+	</definition>
+	<definition name="expenseSearch" extends="template-main">
+		<put-attribute name="header-title-content" value="search expense" />
+		<put-attribute name="title-content" value="search expense" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/expenseSearch.jsp" />
+	</definition>
+	<definition name="percentage" extends="template-main">
+		<put-attribute name="header-title-content" value="gain loss" />
+		<put-attribute name="title-content" value="gain loss" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/percentage.jsp" />
+	</definition>
+	<definition name="createPayment" extends="template-main">
+		<put-attribute name="header-title-content" value="create payment" />
+		<put-attribute name="title-content" value="create payment" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/createPayment.jsp" />
+	</definition>
+	<definition name="Payments" extends="template-main">
+		<put-attribute name="header-title-content" value="All paymentss" />
+		<put-attribute name="title-content" value="All paymentss" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/Payments.jsp" />
+	</definition>
+	<definition name="contact" extends="template-main">
+		<put-attribute name="header-title-content" value="Contact Us" />
+		<put-attribute name="title-content" value="Concat Us" />
+		<put-attribute name="body-content" value="/WEB-INF/views/contents/contact.jsp" />
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,27 @@
+package com.ateam.hostelmanagement.Validators;
+
+import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.ateam.hostelmanagement.hosteldaoimpl.Hostel;
+@Component
+public class HostelValidator implements Validator{
+
+	
+	public boolean supports(Class<?> arg0) {
+		// TODO Auto-generated method stub
+		return Hostel.class.isAssignableFrom(arg0);
+	}
+
+	
+	public void validate(Object arg0, Errors errors) {
+		// TODO Auto-generated method stub
+		
+		Hostel hostel=(Hostel)arg0;
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "hostelName","required.hostelName","hostelName is mandatory" );
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "hostelAddress","required.hostelAddress","hostelAddress is mandatory" );
+	}
+
+}

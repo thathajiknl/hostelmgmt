@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- database properties -->
+	<entry key="db">HostelManagementDB</entry>
+	<entry key="dp_ip">localhost</entry>
+	<entry key="db_port">3306</entry>
+	<entry key="db_username">root</entry>
+	<entry key="db_password"></entry>
+	<entry key="db_driver">com.mysql.jdbc.Driver</entry>
+	
+	<!-- hibernate properties -->
+	<entry key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</entry>
+	<entry key="hibernate.show_sql">true</entry>
+	<entry key="hibernate.format_sql">true</entry>
+	<entry key="hibernate.hbm2ddl.auto">none</entry>
+	<entry key="hibernate.default_schema">HostelManagementDB</entry>
+	<entry key="hibernate.packagesToScan">com.ateam.hostelmanagement</entry>
+	<entry key="hibernate.jdbc.batch_siz">3</entry>
+	<entry key="hibernate.query.substitutions">true 1, false 0</entry>
+</properties>
